@@ -1,0 +1,335 @@
+:root {
+    --color-primary: rgb(69, 111, 237);
+    --color-success: rgb(40, 125, 34);
+    --color-danger: rgb(219, 24, 10);
+    --color-black: rgb(36, 36, 40);
+    --color-black-full: rgb(16, 16, 16);
+    --color-light: rgb(255, 255, 255);
+    --color-light-gray: rgb(231, 218, 218);
+    --color-dark: rgb(49, 44, 44);
+    --color-blue-dark: hsl(252, 30%, 17%);
+
+    --color-text-light: hsl(257, 41%, 97%);
+    --color-text-dark: hsl(260, 4%, 5%);
+    --color-bg-light: hsl(252, 30%, 94%);
+    --color-bg-dark: hsl(260, 4%, 5%);
+    --color-card-light: var(--color-light);
+    --color-card-dark: var(--color-black);
+}
+
+a {
+    text-decoration: none;
+}
+*/* {
+    background: var(--color-bg-light);
+} */
+
+a{
+    text-decoration: none!important;
+}
+
+.all{
+    background-color: #eee;
+    color: var(--color-text-dark);
+    transition: all 0.5s ease-in-out;
+}
+.all-dark-text{
+    background-color: var(--color-bg-dark);
+    color: var(--color-light);
+    transition: all 0.5s ease-in-out;
+}
+
+
+.container-div {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 1rem;
+}
+.search-div {
+    display: flex;
+    justify-content: center;
+    width: 17rem;
+    padding: 3px 2rem;
+    border-radius: 2rem;
+    background: darkslategray;
+}
+.search-input {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}
+.notification {
+    display: flex;
+    gap: 6px;
+    position: relative;
+    margin: 0px 1rem;
+}
+
+.notification img{
+    cursor: pointer;
+}
+
+
+/* CONTENT */
+.main {
+    /* background: var(--color-bg-light); */
+    display: flex;
+    gap: 12px;
+    background: var(--color-bg-light);
+    transition: all 0.5s ease-in-out;
+}
+
+.main-dark{
+    background: var(--color-bg-dark);
+    transition: all 0.5s ease-in-out;
+}
+
+.left-menu {
+    width: 20vw;
+    margin: 1rem 1rem 1rem 0rem;
+    background: var(--color-card-light);
+    transition: all 0.5s ease-in-out;
+}
+.left-menu-dark{
+    background: var(--color-card-dark);
+    color: var(--color-light);
+    transition: all 0.5s ease-in-out;
+}
+.menu-links {
+    min-height: 87vh;
+    border-radius: 1rem;
+}
+.content {
+    width: 80vw;
+    padding: 1rem 0rem;
+}
+
+.a-link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.2rem;
+    border-radius: 0.5rem;
+    border-left: 0.5rem solid transparent;
+    cursor: pointer;
+}
+.a-link:hover {
+    border-left: 0.5rem solid var(--color-primary);
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    transition: all 0.5s ease-in-out;;
+}
+
+
+/* CAR GRID */
+.car-div {
+    margin-bottom: 1rem;
+    padding: 0.9rem;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    background: var(--color-card-light);
+    box-shadow: 0 16px 15px hsla(0, 0%, 7%, 0.125);
+    cursor: pointer;
+}
+
+.car-div-dark{
+    background: var(--color-card-dark);
+}
+.car-div-dark:hover{
+    background: rgb(31, 30, 30);
+    transition: all ease-in-out 0.5s;
+}
+
+.car-div:hover{
+    background:rgb(78, 104, 198);
+    transition: all ease-in-out 0.5s;
+}
+
+.car-div img {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 8rem;
+    margin-top: 1rem;
+    object-fit: fill;
+    margin-bottom: 1.5rem;
+}
+
+.car-name {
+    position: relative;
+}
+
+.in-stock{
+    background: rgb(83, 202, 83);
+    color: var(--color-card-light);
+    padding: 0.4rem .6rem;
+    position: relative;
+    margin: -55px -10px 0px 0px;
+    inset: 10px;
+    float: right;
+    font-size: smaller;
+    border-radius: 30%;
+    min-width: 35px;
+    text-align: center;
+}
+
+.car-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.car-price {
+    color: green;
+    font-weight: bold;
+}
+
+
+
+.hero, .detail-title{
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center;
+    background: var(--color-bg-light);
+}
+
+.hero-dark{
+    background: var(--color-card-dark);
+    color: var(--color-light);
+    transition: all 0.5s ease-in-out;
+}
+
+.bg-hero {
+    text-align: right;
+    font-size: larger;
+}
+
+.bg-hero-img{
+}
+
+
+.modal-content-dark{
+    background: var(--color-card-dark);
+    color: var(--color-light);
+    transition: all ease-in-out 0.5ms;
+}
+.modal-body{
+    background: var(--color-card-light);
+    color: var(--color-dark);
+    transition: all ease-in-out 0.5ms;
+}
+.modal-body-dark{
+    background: var(--color-card-light);
+    color: var(--color-light);
+    transition: all ease-in-out 0.5ms;
+}
+
+/* modal */
+.purchase-btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+/* modal */
+
+/* CAROUSEL */
+.carousel-item img{
+    max-height: 27rem;
+}
+/* CAROUSEL END*/
+
+/* TABLE*/ 
+.btn-icon{
+    display: flex;
+    text-align: end; /* not working*/
+    gap: 0.8rem;
+}
+.fa-trash-alt{
+    color: crimson;
+}
+
+/* FORM */
+.form-div{
+    display: flex;
+    justify-content: center;
+}
+.form-card{
+    width: 80%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 16px 15px hsla(0, 0%, 7%, 0.125);
+}
+
+.gender-div, .course-div{
+    display: flex;
+    gap: 1rem;
+}
+
+.form-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tenten{
+    width: 30rem;
+}
+
+.jsend{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* media query */
+/* Targeting big screen */
+@media only screen and (max-width:1200px){
+    .container-div{
+        width: 90%;
+        margin: auto;
+        transition: all 0.2s ease-in-out;
+    }
+}
+@media only screen and (max-width:999px){
+    .container-div{
+        width: 94%;
+        margin: auto;
+        transition: all 0.2s ease-in-out;
+    }
+    .hero{
+        display: block;
+    }
+    .link-name{display: none;transition: all 0.2s ease-in-out;}
+    .left-menu{width: 8vw;transition: all 0.2s ease-in-out;}
+}
+/* Targeting big tablets */
+@media only screen and (max-width:768px){
+    .container-div{
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+    }
+.search-div{
+        display: none;
+    }
+}
+
+/* Targeting big tablets */
+@media only screen and (max-width:576px){
+    .car-div{
+        width: 80%;
+        margin: auto;
+        height: 12rem;
+        object-fit:fill;
+    }
+}
+    

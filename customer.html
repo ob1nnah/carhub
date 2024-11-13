@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Car Hub</title>
+    <link rel="icon" href="images/home.svg">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/all.min.js">
+    <script src="fontawesome/all.min.js"></script>
+</head>
+<body style="background-color: #eee;">
+    <!-- NAVBAR -->
+    <nav class="container-div navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CAR-HUB</a>
+        </div>
+
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            </ul>
+        </div>
+
+        <form class="search-div light">
+            <input class="search-input me-2" type="text" placeholder="Search">
+            <span>
+                <img src="images/search.svg" alt="">
+            </span>
+        </form>
+
+        <div class="notification">
+            <img id="moon" src="images/sun.svg" alt="sun" style="width:30px;">
+            <img id="sun" src="images/moon.svg" alt="moon" style="width:30px;">
+            <img src="images/bell.svg" alt="Notification Logo" style="width:30px;">
+        </div>
+
+        <div class="dropdown dropstart">
+            <a class="navbar-brand" data-bs-toggle="dropdown" href="#">
+                <img src="images/car14.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profile/html">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Inbox</a></li>
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main container-div light">
+    <!-- LEFT SIDE -->
+        <aside class="left-menu">
+            <div class="menu-links">
+                <a href="index.html" class="a-link">
+                <img src="images/home.svg" alt="home">
+                <span class="link-name">Home</span>
+            </a>
+
+            <a href="explore.html" class="a-link">
+                <img src="images/compass.svg" alt="Explore">
+                <span class="link-name">Explore</span>
+            </a>
+
+            <a href="#" class="a-link">
+                <img src="images/activity.svg" alt="Explore">
+                <span class="link-name">Categories</span>
+            </a>
+
+            <a href="#" class="a-link">
+                <img src="images/heart.svg" alt="Favourite">
+                <span class="link-name">Favourite</span>
+            </a>
+
+            <a href="customer.html" class="a-link">
+                <img src="images/users.svg" alt="user">
+                <span class="link-name">Users</span>
+            </a>
+            
+            <a href="#" class="a-link" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <img src="images/settings.svg" alt="Settings">
+                <span class="link-name">Settings</span>
+            </a>
+            </div>
+            
+        </aside>
+        <!-- LEFT SIDE -->
+
+        <!-- RIGHT SIDE -->
+        <section class="content light">
+            <div class="table-responsive card"></div>
+                <div class="container mt-3">
+                    <h2>Customers</h2>
+                    <p>A list of customers</p>            
+                    <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>0586059690</td>
+                        <td>Male</td>
+                        <td><address>11 boog str</address></td>
+                        <td>
+                            <div class="btn-icons">
+                                <span class="fa fa-pen"></span>
+                                <span class="fa fa-trash-alt" style="color: crimson;"></span>
+                            </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>Kelly Michaels</td>
+                        <td>kemichales@gmail.com</td>
+                        <td>0586059690</td>
+                        <td>Female</td>
+                        <td><address>11 boog str</address></td>
+                        <td>
+                            <div class="btn-icons">
+                                <span class="fa fa-pen"></span>
+                                <span class="fa fa-trash-alt" style="color: crimson;"></span>
+                            </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>Mary Moe</td>
+                        <td>mary@example.com</td>
+                        <td>058068086</td>
+                        <td>Female</td>
+                        <td><address>11 boog str</address></td>
+                        <td>
+                            <div class="btn-icons">
+                                <span class="fa fa-pen"></span>
+                                <span class="fa fa-trash-alt" style="color: crimson;"></span>
+                            </div>
+                        </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                    </ul>
+                </div>
+        </section>
+                <!-- RIGHT SIDE end -->
+                    
+                    
+                <!-- MAIN CONTENT end -->      
+
+                <!-- Offcanvas Sidebar -->
+                <div class="offcanvas offcanvas-end" id="demo">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Settings</h1>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Some text lorem ipsum.</p>
+                        <p>Some text lorem ipsum.</p>
+                        <button class="btn btn-secondary" type="button">A Button</button>
+                    </div>
+                </div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+.one, .two{
+    width:50%;
+    height: 30vh;
+    margin: auto;
+}
+
+.one{background-color: blue;}
+.two{background-color: red;}
+
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
